@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English club</title>
+    <!--boostrap css-->
+    <!-- Bootstrap 5.3.3 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand me-auto" href="#">English Horizon</a>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">English Horizon</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link mx-lg-3" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-3 active " href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-3" href="Activities.html">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-3" href="upcomingEvent.html">Upcoming Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-3" href="ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="joinUs.html" class ="login-button">Join Now</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!--end navbar-->
+<!--Hero section-->
+<section id ="home" class ="hero-section">
+    <div class ="container d-flex align-items-center justify-content-center text-white flex-column text-center">
+        <h1>Welcome To English club</h1>
+        <p class="fs-5">A club where students develop confidence, building their English skills, and create friendships that last a lifetime.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+    <a href="joinUs.html" class="btn-join">Join the Club</a>
+    <a href="Activities.html" class="btn-explore">Explore Activities</a>
+        </div>
+</div>
+</section>
+<!--End hero section-->
+<!-- Activities Section -->
+<section id ="activities">
+  <div class="container-fluid py-5 px-5">
+
+    <p class="activities-label">Featured Activities</p>
+    <h2 class="activities-heading">What We Do</h2>
+    <p class="activities-subheading">From debate stages to storytelling nights, our activities are designed to challenge and inspire.</p>
+    <div class="row g-3 justify-content-center" id="activitiesRow">
+<!-- debate card-->
+  <div class="col-12 col-md-4 mb-4">
+  <a href="Activities.html#debate-detail" style="text-decoration:none; color:inherit;">
+    <div class="activity-card card h-100 border-0 rounded-3 overflow-hidden">
+      <div class="activity-img" style="background-image: url('https://thumbs.dreamstime.com/b/cartoon-color-characters-people-debate-concept-vector-presentation-election-conference-flat-design-style-illustration-202169970.jpg');"></div>
+      <div class="card-body p-4">
+        <h3 class="activity-title">Debate Competition</h3>
+        <p class="activity-desc">Challenge your thinkings, your thoughts and opinions. Argue your points and opinions to the oposing size.Clearly state your stand on the real-world topics.</p>
+        <div class="activity-tags">
+          <span class="activity-badge">Critical Thinking</span>
+          <span class="activity-badge">Teamwork</span>
+          <span class="activity-badge">Communication</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+<!--public speaking-->
+  <div class="col-12 col-md-4 mb-4">
+  <a href="Activities.html#speaking-detail" style="text-decoration:none; color:inherit;">
+    <div class="activity-card card h-100 border-0 rounded-3 overflow-hidden">
+      <div class="activity-img" style="background-image: url('https://tse1.mm.bing.net/th/id/OIP.oQ5WyMS45qfwEIdPiHihMwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3');"></div>
+      <div class="card-body p-4">
+        <h3 class="activity-title">Public Speaking</h3>
+        <p class="activity-desc">Stand in front of many audiences, deliver your speech smoothly and confidently. Develope confident, speaking skill which is important for personal development.</p>
+        <div class="activity-tags">
+          <span class="activity-badge">Speech Delivery</span>
+          <span class="activity-badge">Presentation</span>
+          <span class="activity-badge">Confidence</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+<!--story telling-->
+  <div class="col-12 col-md-4 mb-4">
+  <a href="Activities.html#storytelling-detail" style="text-decoration:none; color:inherit;">
+    <div class="activity-card card h-100 border-0 rounded-3 overflow-hidden">
+      <div class="activity-img" style="background-image: url('https://cdn.vectorstock.com/i/500p/75/33/confident-speech-of-speaker-in-front-audience-vector-48977533.jpg');"></div>
+      <div class="card-body p-4">
+        <h3 class="activity-title">Storytelling Contest</h3>
+        <p class="activity-desc">Let your imagination run wild. Talk and perform the stories that captive, inspire andn leave your audience in awe.</p>
+        <div class="activity-tags">
+          <span class="activity-badge">Creativity</span>
+          <span class="activity-badge">Pronunciation</span>
+          <span class="activity-badge">Expression</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+</section>
+<!-- End Activities Section -->
+<!-- Why Join Us Section -->
+<section class="why-section">
+  <div class="container-fluid py-5 px-5">
+    <p class="why-label">Why Join Us</p>
+    <h2 class="why-heading">Reasons to Be Part<br>of Our Club</h2>
+    <p class="why-subheading">Joining our English Club opens doors to new skills, new friendships, and unforgettable experiences.</p>
+    <div class="row g-5">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-3">
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h5 class="why-card-title">Improve English Skills</h5>
+          <p class="why-card-desc">Practice speaking, listening, reading, and writing through fun activities for all levels. Grow faster and communicate with confidence.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-3">
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h5 class="why-card-title">Build Confidence</h5>
+          <p class="why-card-desc">Build your confidence through debates, presentations, and discussions in a safe and encouraging environment. Every voice deserves to be heard.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-3">
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h5 class="why-card-title">Make New Friends</h5>
+          <p class="why-card-desc">Meet students who share your passion for English. Make lasting friendships and become part of a warm and welcoming community.</p>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-3">
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h5 class="why-card-title">Participate in Events</h5>
+          <p class="why-card-desc">Join competitions, workshops, and exciting club events that challenge and inspire you. There is always something new to keep you motivated and growing.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- End Why Join Us Section -->
+<!-- Upcoming Events Section -->
+<section id="upcoming-events" class="events-section">
+  <p class="events-label">Mark Your Calendar</p>
+  <h2 class="events-heading">Upcoming Events</h2>
+  <p class="events-subheading">Click any event to see the full details and register your spot.</p>
+
+  <div class="accordion" id="eventsAccordion">
+
+    <!-- Event 1 -->
+    <div class="accordion-item event-item">
+      <div class="accordion-header">
+        <button class="accordion-button event-btn collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#e1"
+          aria-expanded="false" aria-controls="e1">
+          <div class="event-date">
+            <div class="event-day">22</div>
+            <div class="event-month">Jun</div>
+          </div>
+          <div class="event-info">
+            <p class="event-number">EVENT 01</p>
+            <h5 class="event-title">Club Debate Battle</h5>
+            <div class="event-meta">
+              <span><i class="fa-regular fa-clock"></i> 9:00 AM -12:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Lab A , Building E</span>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div id="e1" class="accordion-collapse collapse" data-bs-parent="#eventsAccordion">
+        <div class="accordion-body event-body">
+          <p>Select the provided topic and express your stand confidently and accurately.</p>
+          <div class="event-tags">
+            <span class="badge-blue">Debate</span>
+            <span class="badge-yellow">Competition</span>
+            <span class="badge-blue">Teamwork</span>
+          </div>
+          <a href="joinUs.html" class="btn-register">Register Now &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="accordion-item event-item">
+      <div class="accordion-header">
+        <button class="accordion-button event-btn collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#e2"
+          aria-expanded="false" aria-controls="e2">
+          <div class="event-date">
+            <div class="event-day">05</div>
+            <div class="event-month">Jul</div>
+          </div>
+          <div class="event-info">
+            <p class="event-number">EVENT 02</p>
+            <h5 class="event-title">Public Speaking Event</h5>
+            <div class="event-meta">
+              <span><i class="fa-regular fa-clock"></i> 2:00 PM - 5:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Building G, IFL</span>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div id="e2" class="accordion-collapse collapse" data-bs-parent="#eventsAccordion">
+        <div class="accordion-body event-body">
+          <p>Open for newcommer who want are willing to learn, to change and develope themselves.First come first serve.</p>
+          <div class="event-tags">
+            <span class="badge-blue">develope</span>
+            <span class="badge-green">Beginner Friendly</span>
+            <span class="badge-blue">Confidence</span>
+          </div>
+          <a href="#" class="btn-register">Register Now &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="accordion-item event-item">
+      <div class="accordion-header">
+        <button class="accordion-button event-btn collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#e3"
+          aria-expanded="false" aria-controls="e3">
+          <div class="event-date">
+            <div class="event-day">19</div>
+            <div class="event-month">Jul</div>
+          </div>
+          <div class="event-info">
+            <p class="event-number">EVENT 03</p>
+            <h5 class="event-title">Storytelling Night</h5>
+            <div class="event-meta">
+              <span><i class="fa-regular fa-clock"></i> 6:00 PM – 9:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> Building G, IFL, </span>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div id="e3" class="accordion-collapse collapse" data-bs-parent="#eventsAccordion">
+        <div class="accordion-body event-body">
+          <p>Let your imagination be shown on the stage before many audience. Amazing price await for the most creative one.</p>
+          <div class="event-tags">
+            <span class="badge-blue">Storytelling</span>
+            <span class="badge-yellow">Contest</span>
+            <span class="badge-blue">Creativity</span>
+          </div>
+          <a href="#" class="btn-register">Register Now &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 4 -->
+    <div class="accordion-item event-item">
+      <div class="accordion-header">
+        <button class="accordion-button event-btn collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#e4"
+          aria-expanded="false" aria-controls="e4">
+          <div class="event-date">
+            <div class="event-day">04</div>
+            <div class="event-month">Sep</div>
+          </div>
+          <div class="event-info">
+            <p class="event-number">EVENT 04</p>
+            <h5 class="event-title">Annual English Club </h5>
+            <div class="event-meta">
+              <span><i class="fa-regular fa-clock"></i> 4:00 PM - 8:00 PM</span>
+              <span><i class="fa-solid fa-location-dot"></i> CJCC, IFL</span>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div id="e4" class="accordion-collapse collapse" data-bs-parent="#eventsAccordion">
+        <div class="accordion-body event-body">
+          <p>Our biggest event of the year! celebrated the acheivement, the winner and participated by the proffessors from IFL who has experiences in this feild.
+            Come and connect with us!
+          </p>
+          <div class="event-tags">
+            <span class="badge-yellow">Connection</span>
+            <span class="badge-green">All Members</span>
+            <span class="badge-blue">Celebration</span>
+          </div>
+          <a href="#" class="btn-register">Register Now &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End Upcoming Events Section -->
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container-fluid px-5 py-5">
+    <p class="stats-label">English Club By The Numbers</p>
+    <h2 class="stats-heading">Our Club In Numbers</h2>
+    <div class="row g-5 text-center mt-3">
+      <div class="col-6 col-md-3">
+        <div class="stat-card">          <div class="stat-number">120+</div>
+          <div class="stat-title">Active Members</div>
+          <div class="stat-desc">Students growing together</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-title">Core Activities</div>
+          <div class="stat-desc">Debate, Speaking & Storytelling</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="stat-number">15+</div>
+          <div class="stat-title">Events Per Year</div>
+          <div class="stat-desc">Competitions & showcases</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="stat-number">5.0</div>
+          <div class="stat-title">Student Rating</div>
+          <div class="stat-desc">Loved by every member</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+  <div class="container-fluid px-5 py-5">
+    <p class="testi-label">Student Voices</p>
+    <h2 class="testi-heading">What Our Members Say</h2>
+    <p class="testi-subheading">Real words from real students who have grown with us.</p>
+    
+    <div class="row g-5 mt-2">
+      <div class="col-12 col-md-4">
+        <div class="testi-card">
+          <div class="testi-quote">"By joining this club, I gain the confident to express my opinions."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">IK</div>
+            <div>
+              <div class="testi-name">In Kunthy</div>
+              <div class="testi-role">Year 2 · Debate Team</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="testi-card">
+          <div class="testi-quote">"This club taught skill that improve my overall speaking and confident"</div>
+          <div class="testi-author">
+            <div class="testi-avatar">AC</div>
+            <div>
+              <div class="testi-name">An Channsina</div>
+              <div class="testi-role">Year 2· Public Speaking</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="testi-card">
+          <div class="testi-quote">"The best club for people who love to tell story."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">AS</div>
+            <div>
+              <div class="testi-name">Ang Syun</div>
+              <div class="testi-role">Year 2 · Storytelling</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="testi-card">
+          <div class="testi-quote">"I love this club so much, and I get to know a lot of people."</div>
+          <div class="testi-author">
+            <div class="testi-avatar">ON</div>
+            <div>
+              <div class="testi-name">Oue Nitha</div>
+              <div class="testi-role">Year 2 · Storytelling</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">English Club</div>
+      <p class="footer-tagline">A community where students develop confidence, sharpen their English skills, and form friendships that last a lifetime.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-col-title">Quick Links</p>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="Activities.html">Activities</a></li>
+        <li><a href="">Upcoming Events</a></li>
+        <li><a href="">Join Now</a></li>
+      </ul>
+    </div>
+  <div>
+  <p class="footer-col-title">Activities</p>
+  <ul class="footer-links">
+    <li><a href="Activities.html#debate-detail">Debate Competition</a></li>
+    <li><a href="Activities.html#speaking-detail">Public Speaking</a></li>
+    <li><a href="Activities.html#storytelling-detail">Storytelling Contest</a></li>
+  </ul>
+</div>
+    <div>
+      <p class="footer-col-title">Contact Us</p>
+      <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Block A, Room 101<br>School Campus</span></div>
+      <div class="footer-contact-item"><i class="fa-regular fa-envelope"></i><span>englishclub@school.edu</span></div>
+      <div class="footer-contact-item"><i class="fa-regular fa-clock"></i><span>Mon – Fri, 3:00 PM – 5:00 PM</span></div>
+    </div>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <span>© 2025 English Club. All rights reserved.</span>
+    <span>Made with ♥ for students who love English</span>
+  </div>
+</footer>
+<!-- End Footer -->
+<!-- Back to Top Button -->
+<a href="#" id="backToTop" title="Back to Top">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+<!--boostrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

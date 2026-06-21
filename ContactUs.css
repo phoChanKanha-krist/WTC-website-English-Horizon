@@ -1,0 +1,341 @@
+/* ==========================================================================
+   Global & Navigation Elements
+   ========================================================================== */
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.navbar {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: #f4b224;
+}
+
+.login-button {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: rgba(4, 20, 40, 0.9);
+    color: #f4b224;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: darkgoldenrod;
+    color: #f4b224;
+}
+
+.nav-link {
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: 0.3s;
+    padding-right: 50px;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: darkgoldenrod;
+}
+
+/* ==========================================================================
+   Header Banner & Breadcrumbs
+   ========================================================================== */
+.join-hero {
+    background-color: rgba(4, 20, 40, 0.97);
+    color: white;
+    width: 100%;
+    min-height: 260px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+}
+
+.join-hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    color: #f4b224;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.join-hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.join-hero h1 span {
+    color: #f4b224;
+}
+
+.join-hero p {
+    font-size: 1.5rem;
+    color: #8a9ab5;
+}
+
+.breadcrumb-bar {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb-bar a {
+    color: #f4b224;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.breadcrumb-bar a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-bar i {
+    font-size: 0.8rem;
+    color: #8a9ab5;
+}
+
+.breadcrumb-bar span {
+    color: #8a9ab5;
+}
+
+/* ==========================================================================
+   Main Content Panels (Form & Contact Info Panels)
+   ========================================================================== */
+.contact-panel-section {
+    background-color: #FAF6F0 !important;
+}
+
+/* Customizing the Form and Info Wrapper Cards */
+.contact-panel-section .card,
+.contact-panel-section .bg-white {
+    border: 1px solid rgba(4, 20, 40, 0.05) !important; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Light hover lifting effect for desktop screens */
+@media (min-width: 992px) {
+    .contact-panel-section .card:hover,
+    .contact-panel-section .bg-white:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,0.075) !important;
+    }
+}
+
+/* Form Headings & Labels Styling */
+.contact-panel-section h3 {
+    color: #041428;
+    font-size: 2.5rem !important;
+    font-weight: 700;
+}
+
+.contact-panel-section .form-label {
+    font-weight: 600;
+    color: #041428;
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Form Fields */
+.contact-panel-section .form-control {
+    padding: 12px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-panel-section .form-control:focus {
+    border-color: #f4b224;
+    box-shadow: 0 0 0 0.25rem rgba(244, 178, 36, 0.2);
+    outline: 0;
+}
+
+/* Form Submit Button Alignment & Colors */
+.contact-panel-section .btn.login-button {
+    background-color: #041428;
+    color: #f4b224;
+    font-size: 1.5rem;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.contact-panel-section .btn.login-button:hover {
+    background-color: #0d233e;
+}
+
+/* Contact Info Panel Spacing and Text Typography */
+.contact-panel-section .d-flex.align-items-start {
+    margin-bottom: 1.8rem !important;
+}
+
+.contact-panel-section h5 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #041428;
+    margin-bottom: 0.2rem;
+}
+
+.contact-panel-section .text-muted {
+    font-size: 1.5rem;
+    color: #5a6a7e !important;
+    line-height: 1.5;
+}
+
+/* Precise alignment & coloring for icon accents */
+.contact-panel-section .text-warning {
+    color: #f4b224 !important;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Circular social follow buttons in right panel */
+.contact-panel-section .footer-socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%; 
+    border: 1px solid rgba(4, 20, 40, 0.15);
+    color: #041428;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.contact-panel-section .footer-socials a:hover {
+    background-color: #f4b224;
+    border-color: #f4b224;
+    color: #041428;
+}
+
+/* ==========================================================================
+   Footer Section
+   ========================================================================== */
+.site-footer {
+    background-color: rgba(4, 20, 40, 0.97);
+    color: #e0d9cc;
+    padding: 60px 60px 0 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f4b224;
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    font-size: 1.25rem;
+    color: #8a9ab5;
+    line-height: 1.6;
+    max-width: 260px;
+}
+
+.footer-col-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #c8a84b;
+    margin-bottom: 1.1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li { 
+    margin-bottom: 0.55rem; 
+}
+
+.footer-links a {
+    font-size: 1.25rem;
+    color: #b0bcc9;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover { 
+    color: #c8a84b; 
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    color: #8a9ab5;
+}
+
+.footer-contact-item i { 
+    color: #c8a84b; 
+    margin-top: 3px; 
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.25rem;
+}
+
+.footer-socials a {
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8a9ab5;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.footer-socials a:hover { 
+    border-color: #c8a84b; 
+    color: #c8a84b; 
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 40px 0 0 0;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    font-size: 1rem;
+    color: #5a6a7e;
+    flex-wrap: wrap;
+    gap: 10px;
+}

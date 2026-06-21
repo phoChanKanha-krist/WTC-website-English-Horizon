@@ -1,0 +1,351 @@
+ /* ── Footer ── */
+.site-footer {
+  background-color: rgba(4, 20, 40, 0.97);
+  color: #e0d9cc;
+  padding: 60px 60px 0 60px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+.footer-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f4b224;
+  margin-bottom: 0.5rem;
+}
+.footer-tagline {
+  font-size: 1.25rem;
+  color: #8a9ab5;
+  line-height: 1.6;
+  max-width: 260px;
+}
+.footer-col-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #c8a84b;
+  margin-bottom: 1.1rem;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li { margin-bottom: 0.55rem; }
+.footer-links a {
+  font-size: 1.25rem;
+  color: #b0bcc9;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: #c8a84b; }
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: #8a9ab5;
+}
+.footer-contact-item i { color: #c8a84b; margin-top: 3px; }
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.25rem;
+}
+.footer-socials a {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a9ab5;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.footer-socials a:hover { border-color: #c8a84b; color: #c8a84b; }
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin: 40px 0 0 0;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  font-size: 1rem;
+  color: #5a6a7e;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/*end footer*/
+/* ── Upcoming Events Section ── */
+.events-section {
+  background-color: #faf7f2;
+  padding: 100px 80px;
+}
+.events-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size:5rem;
+  color: #ffc107;
+  margin-bottom: 0.5rem;
+}
+.events-heading {
+  font-weight: 700;
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.events-subheading {
+  color: black;
+  font-size:26px;
+  margin-bottom: 3rem;
+}
+/* ── Accordion wrapper ── */
+#eventsAccordion {
+  border-radius: 16px;
+  overflow: hidden;
+}
+/* ── Each event row ── */
+.event-item {
+  border: none !important;
+  border-bottom: 1px solid #f0ebe0 !important;
+}
+.event-item:last-child {
+  border-bottom: none !important;
+}
+.event-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  box-shadow: none;
+  min-height: 150px;
+}
+/* ── Date badge ── */
+.event-date {
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #1a1a2e;
+  min-width: 70px;
+  flex-shrink: 0;
+}
+.event-day {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  color: #c8a84b;
+}
+.event-month {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #c8a84b;
+}
+/* ── Event text block ── */
+.event-info {
+  flex-grow: 1;
+  text-align: left;
+}
+.event-number {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #c8a84b;
+  margin-bottom: 0.25rem;
+}
+.event-title {
+  font-weight: 700;
+  color: #000;
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+.event-meta {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 1.25rem;
+  color: #888;
+}
+.event-meta i {
+  margin-right: 4px;
+}
+/* ── Expanded body ── */
+.event-body {
+  padding: 0 24px 24px 118px;
+}
+.event-body p {
+  color: #555;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+/* ── Tag badges ── */
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.badge-blue,
+.badge-yellow,
+.badge-green {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.badge-blue   { background-color: #dbeafe; color: #1e3a5f; }
+.badge-yellow { background-color: #fef3c7; color: #78450a; }
+.badge-green  { background-color: #dcfce7; color: #14532d; }
+/* ── Register button ── */
+.btn-register {
+  display: inline-block;
+  background-color: #1a1a2e;
+  color: #c8a84b;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: opacity 0.2s;
+}
+.btn-register:hover {
+  opacity: 0.85;
+  color: #c8a84b;
+}
+/* ── Accordion open state — gold highlight ── */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(200, 168, 75, 0.12) !important;
+  color: #c8a84b !important;
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) .event-title {
+  color: #c8a84b;
+}
+.accordion-button:not(.collapsed)::after {
+  filter: sepia(1) saturate(4) hue-rotate(5deg) !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+/* ==========================================================================
+   Header Banner & Breadcrumbs
+   ========================================================================== */
+.join-hero {
+    background-color: rgba(4, 20, 40, 0.97);
+    color: white;
+    width: 100%;
+    min-height: 260px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+}
+
+.join-hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    color: #f4b224;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.join-hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.join-hero h1 span {
+    color: #f4b224;
+}
+
+.join-hero p {
+    font-size: 1.5rem;
+    color: #8a9ab5;
+}
+
+.breadcrumb-bar {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb-bar a {
+    color: #f4b224;
+    text-decoration: none;
+}
+
+.breadcrumb-bar a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-bar i {
+    font-size: 0.8rem;
+    color: #8a9ab5;
+}
+
+.breadcrumb-bar span {
+    color: #8a9ab5;
+}
+/*navbar*/
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.navbar {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background-color: #f4b224;
+}
+
+.login-button {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: rgba(4, 20, 40, 0.9);
+    color: #f4b224;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: darkgoldenrod;
+    color: #f4b224;
+}
+
+.nav-link {
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: 0.3s;
+    padding-right: 50px;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: darkgoldenrod;
+}
