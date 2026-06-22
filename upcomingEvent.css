@@ -1,3 +1,6 @@
+html {
+    overflow-y: scroll;
+}
  /* ── Footer ── */
 .site-footer {
   background-color: rgba(4, 20, 40, 0.97);
@@ -240,9 +243,7 @@
   box-shadow: none !important;
   outline: none;
 }
-/* ==========================================================================
-   Header Banner & Breadcrumbs
-   ========================================================================== */
+/* banner*/
 .join-hero {
     background-color: rgba(4, 20, 40, 0.97);
     color: white;
@@ -347,5 +348,269 @@
 
 .nav-link:hover, 
 .nav-link.active {
-    color: darkgoldenrod;
+    color: darkgoldenrod !important;
+}
+@media (max-width: 1440px) {
+    .nav-link { font-size: 20px !important; padding-right: 20px !important; }
+    .navbar-brand { font-size: 1.5rem !important; }
+    .login-button { font-size: 16px !important; padding: 8px 16px !important; }
+    .navbar { padding-top: 12px !important; padding-bottom: 12px !important; }
+    .join-hero .eyebrow {
+      font-size: 1.5rem;
+}
+.join-hero h1 {
+    font-size: 2.5rem;}
+
+.join-hero h1 span {
+  font-size: 2.5rem;
+    color: #f4b224;
+}
+
+.join-hero p {
+    font-size: 1.25rem;
+    color: #8a9ab5;
+}
+.events-label {
+  font-size:2.5rem;
+
+}
+.events-heading {
+  font-size: 2rem;
+
+}
+.events-subheading {
+  font-size: 1.2rem;
+}
+.event-day {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  color: #c8a84b;
+}
+.event-month {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #c8a84b;
+}
+/* ── Event text block ── */
+.event-info {
+  flex-grow: 1;
+  text-align: left;
+}
+.event-number {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: #c8a84b;
+  margin-bottom: 0.25rem;
+}
+.event-title {
+  font-size: 1.8rem !important;
+
+}
+.event-meta {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 1rem;
+.event-meta i {
+  margin-right: 4px;}}
+  .event-body p {
+  font-size: 1rem;
+}
+}
+/* ── Tag badges ── */
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.badge-blue,
+.badge-yellow,
+.badge-green {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.badge-blue   { background-color: #dbeafe; color: #1e3a5f; }
+.badge-yellow { background-color: #fef3c7; color: #78450a; }
+.badge-green  { background-color: #dcfce7; color: #14532d; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .hero-label {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-desc {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .hero-title {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .hero-label {
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+
+    .hero-desc {
+        font-size: 1rem !important;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .about-hero {
+        min-height: 50vh;
+        padding-top: 60px;
+    }
+
+    .section-label {
+        font-size: 2rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    .section-heading {
+        font-size: 1.75rem !important;
+    }
+
+    .section-sub {
+        font-size: 1rem !important;
+    }
+
+    .story-section {
+        padding: 80px 20px;
+    }
+
+    .story-text {
+        padding-left: 0;
+    }
+
+    .mv-section {
+        padding: 80px 20px;
+    }
+
+    .mv-card {
+        margin: 10px 0;
+        padding: 2rem;
+    }
+
+    .team-card {
+        max-width: 100%;
+    }
+
+    .team-avatar {
+        height: 250px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-brand {
+        font-size: 1.5rem;
+    }
+
+    .footer-tagline,
+    .footer-links a,
+    .footer-contact-item {
+        font-size: 1rem;
+    }
+
+    .footer-col-title {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .site-footer {
+        padding: 40px 20px 0 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 16px !important;
+    }
+    .event-btn {
+        flex-wrap: wrap !important;
+        min-height: auto !important;
+        padding: 0.75rem !important;
+    }
+    .event-title { font-size: 0.85rem !important; }
+    .event-number { font-size: 0.7rem !important; }
+    .event-day { font-size: 1.2rem !important; }
+    .event-month { font-size: 0.7rem !important; }
+    .event-meta { font-size: 0.7rem !important; flex-direction: column !important; gap: 2px !important; }
+    .event-btn { min-height: auto !important; padding: 0.6rem 0.8rem !important; }
+    .event-date { min-width: 45px !important; padding: 0.3rem 0.4rem !important; }
+
+}
+
+@media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+    .site-footer { padding: 40px 20px 0 20px !important; }
+    .footer-bottom { flex-direction: column !important; text-align: center !important; }
+    .events-section { padding: 60px 20px !important; }
+}
+
+@media (max-width: 425px) {
+    .join-hero { padding-top: 80px !important; }
+    .join-hero .eyebrow { font-size: 1rem !important; }
+    .join-hero h1 { font-size: 1.5rem !important; }
+    .join-hero p { font-size: 0.9rem !important; }
+
+    .events-label { font-size: 1.5rem !important; }
+    .events-heading { font-size: 1.5rem !important; }
+    .events-subheading { font-size: 0.9rem !important; }
+    .events-section { padding: 40px 16px !important; }
+
+    .event-btn {
+        padding: 0.75rem !important;
+        min-height: auto !important;
+        gap: 0.5rem !important;
+    }
+    .event-date { min-width: 50px !important; padding: 0.3rem 0.5rem !important; }
+    .event-day { font-size: 1.2rem !important; }
+    .event-month { font-size: 0.7rem !important; }
+    .event-number { font-size: 0.75rem !important; }
+    .event-title { font-size: 1rem !important; }
+    .event-meta { flex-direction: column !important; gap: 2px !important; font-size: 0.75rem !important; }
+    .event-body { padding: 0 16px 16px 16px !important; }
+
+    .nav-link { font-size: 16px !important; }
+    .footer-grid { grid-template-columns: 1fr !important; }
+    .site-footer { padding: 40px 20px 0 20px !important; }
+    .footer-bottom { flex-direction: column !important; text-align: center !important; }
 }

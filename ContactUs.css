@@ -1,6 +1,7 @@
-/* ==========================================================================
-   Global & Navigation Elements
-   ========================================================================== */
+html {
+    overflow-y: scroll;
+}
+/*navbar*/
 .navbar-brand {
     font-size: 2rem;
     font-weight: bold;
@@ -37,15 +38,12 @@
     transition: 0.3s;
     padding-right: 50px;
 }
-
 .nav-link:hover, 
 .nav-link.active {
-    color: darkgoldenrod;
+    color: darkgoldenrod !important;
 }
 
-/* ==========================================================================
-   Header Banner & Breadcrumbs
-   ========================================================================== */
+/*banner*/
 .join-hero {
     background-color: rgba(4, 20, 40, 0.97);
     color: white;
@@ -112,9 +110,7 @@
     color: #8a9ab5;
 }
 
-/* ==========================================================================
-   Main Content Panels (Form & Contact Info Panels)
-   ========================================================================== */
+/*contect*/
 .contact-panel-section {
     background-color: #FAF6F0 !important;
 }
@@ -125,30 +121,175 @@
     border: 1px solid rgba(4, 20, 40, 0.05) !important; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+@media (max-width: 1440px) {
+    .nav-link { font-size: 20px !important; padding-right: 20px !important; }
+    .navbar-brand { font-size: 1.5rem !important; }
+    .login-button { font-size: 16px !important; padding: 8px 16px !important; }
+    .navbar { padding-top: 12px !important; padding-bottom: 12px !important; } /* ← add this */
+}
+.join-hero .eyebrow {
+      font-size: 1.5rem;
+}
+.join-hero h1 {
+    font-size: 2.5rem;}
 
-/* Light hover lifting effect for desktop screens */
-@media (min-width: 992px) {
-    .contact-panel-section .card:hover,
-    .contact-panel-section .bg-white:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 1rem 3rem rgba(0,0,0,0.075) !important;
+.join-hero h1 span {
+  font-size: 2.5rem;
+    color: #f4b224;
+}
+
+.join-hero p {
+    font-size: 1.25rem;
+    color: #8a9ab5;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .hero-label {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-desc {
+        font-size: 1.25rem;
     }
 }
 
+@media (max-width: 425px) {
+
+    .hero-title {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .hero-label {
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+
+    .hero-desc {
+        font-size: 1rem !important;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .about-hero {
+        min-height: 50vh;
+        padding-top: 60px;
+    }
+
+    .section-label {
+        font-size: 2rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    .section-heading {
+        font-size: 1.75rem !important;
+    }
+
+    .section-sub {
+        font-size: 1rem !important;
+    }
+
+    .story-section {
+        padding: 80px 20px;
+    }
+
+    .story-text {
+        padding-left: 0;
+    }
+
+    .mv-section {
+        padding: 80px 20px;
+    }
+
+    .mv-card {
+        margin: 10px 0;
+        padding: 2rem;
+    }
+
+    .team-card {
+        max-width: 100%;
+    }
+
+    .team-avatar {
+        height: 250px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-brand {
+        font-size: 1.5rem;
+    }
+
+    .footer-tagline,
+    .footer-links a,
+    .footer-contact-item {
+        font-size: 1rem;
+    }
+
+    .footer-col-title {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .site-footer {
+        padding: 40px 20px 0 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-link {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .mv-card {
+        margin: 10px 0;
+    }
+
+    .story-text {
+        padding-left: 0;
+    }
+}
 /* Form Headings & Labels Styling */
 .contact-panel-section h3 {
     color: #041428;
     font-size: 2.5rem !important;
     font-weight: 700;
 }
-
 .contact-panel-section .form-label {
     font-weight: 600;
     color: #041428;
     font-size: 2rem;
     margin-bottom: 0.4rem;
 }
-
 /* Form Fields */
 .contact-panel-section .form-control {
     padding: 12px 16px;
@@ -225,9 +366,7 @@
     color: #041428;
 }
 
-/* ==========================================================================
-   Footer Section
-   ========================================================================== */
+/* footer*/
 .site-footer {
     background-color: rgba(4, 20, 40, 0.97);
     color: #e0d9cc;
@@ -338,4 +477,18 @@
     color: #5a6a7e;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    .site-footer {
+        padding: 40px 20px 0 20px !important;
+    }
+    .footer-bottom {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
 }
